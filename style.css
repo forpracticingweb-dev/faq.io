@@ -1,0 +1,92 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+::root{    
+    --mainColor: #2196F3;
+    --secondaryColor: #f44336;
+    --white: #fff;
+    --black: #000;
+    --gray: #878787;
+    --lightGray: #e0e0e0;
+    --darkGray: #515151;
+
+}
+body{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    overflow-y: hidden;
+}
+
+.accordian-icon{
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: 2rem;
+}
+.accordian img{
+    padding-top: 2rem;
+}
+.accordian h1{
+    padding-top: 1rem;
+}
+.accordian-body{
+    height: 30vh;
+    background-color: hotpink;
+    width: 100%;
+    background-image: url(/assets/images/background-pattern-desktop.svg);
+    margin: 0;
+    
+}
+.bg-color{
+    background-color: hotpink;
+    height: 100vh;
+}
+.accordian-bg-color{
+    display: flex;
+    justify-content: center;
+}
+.accordian{
+    border: 1px solid grey;
+    background-color: white;
+    padding: 0 3rem 3rem 3rem;
+    width: 900px;
+    position: absolute;
+    top: 20%;
+    line-height: 2;
+    max-width: 100%;
+    border-radius: 1.4rem;
+}
+.accordian .label{
+    position: relative;
+}
+.accordian .wrapper.active .content{
+    height: 120px;
+}
+.accordian .wrapper.active .label::before{
+content: url(/assets/images/icon-minus.svg);
+font-size: 2rem;
+}
+.accordian .label::before{
+    content: url(/assets/images/icon-plus.svg);
+    color: pink;
+    top: 50%;
+    right: -5px;
+    font-size: 2rem;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.accordian .content{
+    transition: 0.7s;
+    overflow: hidden;
+    width: 800px;
+    max-width: 100%;
+    font-size: 1.2rem;
+    height: 0;
+}
+.accordian hr{
+    width: 100%;
+    margin-inline-start: 0;
+    border: 1px solid grey;
+}
