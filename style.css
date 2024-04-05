@@ -35,7 +35,7 @@ body{
     height: 30vh;
     background-color: hotpink;
     width: 100%;
-    background-image: url(/assets/images/background-pattern-desktop.svg);
+    background-image: url(background-pattern-desktop.svg);
     margin: 0;
     
 }
@@ -65,11 +65,11 @@ body{
     height: 120px;
 }
 .accordian .wrapper.active .label::before{
-content: url(/assets/images/icon-minus.svg);
+content: url(icon-minus.svg);
 font-size: 2rem;
 }
 .accordian .label::before{
-    content: url(/assets/images/icon-plus.svg);
+    content: url(icon-plus.svg);
     color: pink;
     top: 50%;
     right: -5px;
